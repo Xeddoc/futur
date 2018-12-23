@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chargement...</title>
+	<link rel="stylesheet" type="text/css" href="loadingsite.css">
+</head>
+<body>
+<br>
+<div class="load" id="load">
+<br> <br>
+<div class="neon-text">Veuillez Patienter...</div>
+<link async href="http://fonts.googleapis.com/css?family=Atomic%20Age" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+	<div id="loader-container">
+		<div class="loader-div">
+			<div class="loader-div">
+				<div class="loader-div">
+					<div class="loader-div">
+						<div class="loader-div">
+	</div>
+</div>
+
+<script type="text/javascript">
+	(function() {
+	var preload = document.getElementById("load");
+	var loading = 0;
+	var id= setInterval(frame, 64);
+
+	function frame() {
+		if(loading == 100) {
+			clearInterval(id);
+			window.open("principal.html", "_self");
+		}
+		else {
+			loading = loading + 1;
+			if(loading == 90) {
+				preload.style.animation = "fadeout 1s ease";
+			}
+		}
+	} 
+
+	
+})();
+</script>
+</body>
+</html>

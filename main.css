@@ -1,0 +1,185 @@
+body 
+{
+	margin: 0;
+	padding: 0;
+	background: #112c38;
+}
+.navbar {
+	margin: 0;
+	padding: 0;
+	background-color: #112c38
+}
+#who 
+{
+	padding-top: 200px; 
+	height: 400px;
+}
+#Decouvertes
+{
+	padding-top: 210px; 
+	height: 900px;
+
+}
+#surplace
+{
+	padding-top: 300px; 
+	height: 900px;
+}
+#tourisme 
+{
+	float: left;
+}
+
+#LHC
+{
+	float: right;
+}
+
+#futureisnow
+{
+	padding-top: 180px;
+	height: 1000px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15vh;
+
+	
+}
+
+ul li
+{
+	list-style: none;
+	margin: 0 20px;
+	transition: 0.5s;
+}
+ul li a 
+{
+	display: block;
+	position: relative;
+	text-decoration: none;
+	padding: 5px;
+	font-size: 18px;
+	font-family: sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+ul:hover li a 
+{
+	transform: scale(1.5);
+	opacity: .2;
+	filter: blur(5px);
+	color: white;
+}
+
+ul li a:hover
+{
+	transform: scale(2);
+	opacity: 1; 
+	filter: blur(0);
+}
+
+ul li a:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #822483;
+	transition: 0.5s;
+	transform-origin: right;
+	transform: scaleX(0);
+	z-index: -1;
+}
+
+
+ul li a:hover:before
+{
+	transition: 0.5s;
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+hr {border-top: 1px solid #000; width:50%;}
+
+a {color: #000;}
+
+a:link{text-decoration:none;}
+
+.box1{background: rgb(76, 175, 80, 0.6);}
+.box2{background: rgb(192, 192, 200, 0.6);}
+.box3{background: rgb(255, 0, 0, 0.6);;}
+
+
+
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
+
+#goodies
+{
+	padding-top: 210px;
+	height: 900px;
+}
+
+#contact
+{
+	padding-top: 210px;
+	height: 900px;
+}
+.containerrobot {
+  position: relative;
+  width: 50%;
+  float: left;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: grey;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 0.8;
+  float: left;
+}
+
+.containerrobot:hover .overlay {
+  height: 100%;
+  float: left;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  float: left;
+}
+
